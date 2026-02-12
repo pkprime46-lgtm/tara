@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Product Catalogue Aggregator</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <h1>AI Product Catalogue Aggregator</h1>
+        <p>
+          Search products in natural language and compare listings from
+          Swiggy, Blinkit, and Zepto in one catalogue view.
+        </p>
+      </header>
+
+      <section class="search-panel">
+        <form id="search-form">
+          <label for="prompt">What do you want to buy?</label>
+          <div class="row">
+            <input
+              id="prompt"
+              name="prompt"
+              type="text"
+              placeholder="e.g. Find best price for Amul milk 1 litre"
+              required
+            />
+            <button type="submit">Search</button>
+          </div>
+        </form>
+        <p id="status" class="status"></p>
+        <p id="summary" class="summary"></p>
+      </section>
+
+      <section>
+        <div id="catalogue" class="catalogue"></div>
+      </section>
+    </main>
+
+    <template id="card-template">
+      <article class="card">
+        <img class="card-img" alt="product" />
+        <div class="card-body">
+          <h3 class="name"></h3>
+          <p class="meta"></p>
+          <p class="price"></p>
+          <a class="link" target="_blank" rel="noreferrer">Open on site</a>
+        </div>
+      </article>
+    </template>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
