@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ai-product-catalogue
+    runtime: docker
+    plan: free
+    autoDeploy: true
