@@ -1,0 +1,91 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+body {
+  margin: 0;
+}
+
+.page {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.search-panel {
+  margin: 24px 0;
+  padding: 16px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+}
+
+.row {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  border: 1px solid #cbd5e1;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.catalogue {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+.card-img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  background: linear-gradient(45deg, #dbeafe, #bfdbfe);
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.name {
+  font-size: 0.95rem;
+  margin: 0 0 6px;
+}
+
+.meta,
+.price,
+.status,
+.summary {
+  margin: 4px 0;
+  color: #334155;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 8px;
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 600;
+}
